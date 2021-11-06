@@ -1,0 +1,229 @@
+.home-wrapper {
+    margin-top: 150px;
+    @media(max-width: 1024px){
+      margin-top: 30px;
+    }
+    .home-inner {
+        h1 {
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 20px;
+            font-size: 48px;
+            padding-left: 30px;
+            @media(max-width: 1024px){
+                padding-left: 0;
+                font-size: 35px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            @media(max-width: 415px){
+                font-size: 28px;
+            }
+        }
+
+        p {
+            padding-left: 30px;
+            color: #fff;
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 70px;
+            @media(max-width: 1024px){
+                padding-left: 0;
+                margin-bottom: 30px;
+                font-size: 16px;
+                text-align: center;
+            }
+            @media(max-width: 415px){
+                font-size: 15px;
+            }
+        }
+
+        .home-form-wrapper {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px 15px 0px 0px;
+            padding: 40px 20px 50px 20px;
+            @media(max-width: 1024px){
+                padding: 30px 15px;
+            }
+
+            h6 {
+                color: #fff;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+
+            form {
+                .form-inner-section {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    @media(max-width: 1024px){
+                        flex-direction: column;
+                    }
+
+                    .surgery {
+                        position: relative;
+                        width: 25%;
+                        @media(max-width: 1024px){
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+
+                        select {
+                            user-select: none;
+                            background-color: transparent;
+                            width: 100%;
+                            color: #9B999D;
+                            border: 1px solid #9B999D;
+                            padding: 0 15px 0 40px;
+                            border-radius: 5px 0px 0px 5px;
+                            height: 50px;
+                            @media(max-width: 1024px){
+                                border-radius: 5px 5px 5px 5px;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .location-icon {
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #9B999D;
+                        }
+                    }
+
+                    .date-birth-wrapper {
+                        // width: 15%;
+                        position: relative;
+                        user-select: none !important;
+                        @media(max-width: 1024px){
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .date-birth {
+                            user-select: none !important;
+                            background-color: transparent;
+                            color: #9B999D;
+                            border: 1px solid #9B999D;
+                            border-left: 0px;
+                            font-size: 18px;
+                            height: 50px;
+                            padding: 0 15px 0 40px;
+
+                            @media(max-width: 1024px){
+                                width: 100%;
+                                border-radius: 5px;
+                                border-left: 1px solid #9B999D;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    // Date of Birth 
+                    ::-webkit-calendar-picker-indicator {
+                        cursor: pointer;
+                        border-radius: 4px;
+                        margin-right: 2px;
+                        opacity: 1;
+                        filter: invert(0.8);
+                        position: absolute;
+                        left: -20px;
+
+                        // @media(max-width: 991px) {
+                        //     left: -8px;
+                        // }
+                    }
+
+                    // Date of Birth 
+
+                    // Select box 
+                    .select-box {
+                        position: relative;
+                        width: 20%;
+
+                        @media(max-width: 1024px){
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+                        select {
+                            user-select: none;
+                            width: 100%;
+                            background-color: transparent;
+                            color: #9B999D;
+                            border: 1px solid #9B999D;
+                            border-left: 0px;
+                            border-radius: 0px 5px 5px 0px;
+                            height: 50px;
+                            padding: 0 15px;
+                            @media(max-width: 1024px){
+                                width: 100%;
+                                border-left: 1px solid #9B999D;
+                                border-radius: 5px;
+                            }
+
+                            @media(max-width: 767px) {
+                                width: 100%;
+                                border-radius: 5px;
+                                border-left: 1px solid #9B999D;
+                            }
+
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .location-icon {
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #9B999D;
+                        }
+                    }
+
+                    // Select box
+                    .submit-btn {
+                        margin-left: 20px;
+                        width: 20%;
+                        @media(max-width: 1024px){
+                            width: 30%;
+                            margin-left: 0;
+                        }
+                        @media(max-width: 575px){
+                            width: 100%;
+                        }
+                        .search-btn {
+                            width: 100%;
+                            height: 50px;
+                            border: 0px;
+                            font-size: 18px;
+                            color: #000;
+                            transition: 0.2s ease-in-out;
+                            border-radius: 5px;
+                            padding-left: 50px;
+                            padding-right: 50px;
+
+                            &:hover {
+                                background-color: rgb(124, 38, 38);
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

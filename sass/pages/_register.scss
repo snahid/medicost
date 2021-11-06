@@ -1,0 +1,203 @@
+.register-wrapper {
+    margin-top: 100px;
+    @media(max-width: 1024px){
+      margin-top: 30px;
+    }
+
+    .register-inner {
+        h2 {
+            padding-left: 30px;
+            color: $white;
+            font-family: $font;
+            margin-bottom: 40px;
+            @media(max-width: 991px){
+                padding-left: 0;
+            }
+
+            @media(max-width: 575px) {
+                font-size: 19px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            @media(max-width: 400px) {
+                font-size: 18px;
+            }
+        }
+
+        .register {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px 15px 0px 0px;
+            padding: 40px 20px 30px 20px;
+            width: 80%;
+
+            @media(max-width: 991px) {
+                width: 100%;
+                padding: 25px 10px 20px 10px;
+            }
+
+            form {
+                .form-input {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 15px;
+                    @media(max-width: 767px){
+                        flex-direction: column;
+                    }
+
+                    input[type="text"] {
+
+                        background-color: transparent;
+                        color: #fff;
+                        border: 1px solid #9B999D;
+                        padding: 15px 10px;
+                        font-size: 18px;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    .first-name {
+                        border-right: 0px !important;
+                        border-radius: 5px 0px 0px 5px;
+                        width: 50%;
+                        @media(max-width: 767px){
+                            width: 100%;
+                            border-right: 1px solid #9B999D !important;
+                            border-radius: 5px;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .sur-name {
+                        border-radius: 0px 5px 5px 0px;
+                        width: 50%;
+                        @media(max-width: 767px){
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    ::-webkit-input-placeholder {
+                        color: #9B999D;
+                    }
+
+                    :-ms-input-placeholder {
+                        color: #9B999D;
+                    }
+
+                    ::placeholder {
+                        color: #9B999D;
+                    }
+
+                    .address {
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+
+                    .birth-date {
+                        background-color: transparent;
+                        color: #9B999D;
+                        border: 1px solid #9B999D;
+                        padding: 15px 10px 15px 45px;
+                        font-size: 18px;
+                        width: 50%;
+                        border-radius: 5px 0px 0px 5px;
+
+                        @media(max-width: 767px){
+                            width: 100%;
+                            border-radius: 5px;
+                            margin-bottom: 15px;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                  
+
+                    // Date of Birth 
+                    ::-webkit-calendar-picker-indicator {
+                        cursor: pointer;
+                        border-radius: 4px;
+                        margin-right: 2px;
+                        opacity: 1;
+                        filter: invert(0.8);
+                        position: absolute;
+                        left: 0;
+                        @media(max-width: 991px){
+                            left: -8px;
+                        }
+                    }
+                    // Date of Birth 
+
+                   
+
+                    .select-box{
+                        width: 50%;
+                        position: relative;
+                        @media(max-width: 767px){
+                            width: 100%;
+                        }
+                        select {
+                            background-color: transparent;
+                            width: 100%;
+                            color: #9B999D;
+                            border: 1px solid #9B999D;
+                            border-left: 0px;
+                            padding: 15px 10px 15px 40px;
+                            border-radius: 0px 5px 5px 0px;
+                            height: 59px;
+    
+                            @media(max-width: 767px){
+                                width: 100%;
+                                border-radius: 5px;
+                                border-left: 1px solid #9B999D;
+                            }
+    
+    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                        .location-icon{
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #9B999D;
+                        }
+                    }
+                   
+                }
+
+                p {
+                    color: #9B999D;
+                }
+
+                .submit-btn-wrapper {
+                    text-align: center;
+
+                    .register-btn {
+                        border: none;
+                        font-size: 18px;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        padding: 10px 50px;
+                        color: #000;
+                        transition: 0.2s ease-in-out;
+
+                        &:hover {
+                            background-color: rgb(124, 38, 38);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

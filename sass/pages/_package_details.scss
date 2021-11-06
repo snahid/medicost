@@ -1,0 +1,42 @@
+.result-wrapper{
+    .result-inner{
+        .package-detail{
+            margin-bottom: 20px;
+            .paradetails{
+                color: $white;
+                font-weight: 300;
+                margin-top: 30px;
+                padding: 0 20px;
+
+                @media(max-width: 991px){
+                   padding: 0 0;
+                }
+            }
+            .booking-btn{
+                text-align: center;
+                margin-top: 60px;
+                a{
+                    text-decoration: none;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 10px 25px;
+                    color: #000;
+                    transition: 0.2s ease-in-out;
+                    &:hover{
+                        background-color: rgb(124, 38, 38);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        a{
+            margin-left: 20px;
+            color: $white;
+            text-decoration: none;
+            font-size: 18px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
